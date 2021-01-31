@@ -16,5 +16,7 @@
   margin:100px,auto ;
   padding:100px;
   margin-left: 50%;
-  box-shadow: 25px;
+  box-shadow: 5px 5px #968f8f;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
 }

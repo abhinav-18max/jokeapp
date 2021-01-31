@@ -27,7 +27,7 @@ function App (){
    
    <div className="return">
      
-   <button onClick={click} className="btn"><h1>jokes</h1></button>
+   <button onClick={click} className="btn"><h1>Jokes</h1></button>
    </div>
    <div>{myArray.map( e =>
     <div className="list">{ e }</div>
