@@ -1,12 +1,25 @@
 import React, {useEffect, useState} from'react';
-import './App.css';
+
 import { Component} from 'react';
 import axios from 'axios';
 import { render } from '@testing-library/react';
-
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from './theme';
+import { GlobalStyles } from './global';
 
 function App (){
+  const [theme, setTheme] = useState('light');
+
+
+const toggleTheme = () => {
+
+  if (theme === 'light') {
+    setTheme('dark');
   
+  } else {
+    setTheme('light');
+  }
+}
 
  const [myArray, updateMyArray] = useState([]);
       var click=()=>{
@@ -23,19 +36,24 @@ function App (){
 
  
  return(
+  <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
    <>
-   
+   <GlobalStyles />
    <div className="return">
-     
-   <button onClick={click} className="btn"><h1>Jokes</h1></button>
+   <div className="btn">
+   <button onClick={toggleTheme}>Toggle theme</button>
    </div>
+  <div className="btn"><button onClick={click} >Jokes</button></div>
+   
+   
    <div>{myArray.map( e =>
     <div className="list">{ e }</div>
       )}
   </div>
- 
+  </div>
   
    </>
+   </ThemeProvider>
   );
  }
 
