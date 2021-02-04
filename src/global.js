@@ -31,19 +31,36 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 5px;
     border-radius: 10px;
     margin-top: 5px;
-  }
-  .btn{
-    background-color: ${({ theme }) => theme.body};
-    position: relative;
-    color:${({ theme }) => theme.text} ;
     
+  }
+  button.btn{
+    background-color: ${({ theme }) => theme.body};
+    position: absolute;
+    color:${({ theme }) => theme.text} ;
+    right:25px;
+    top:25px;
     margin:100px,auto ;
-    padding:100px;
-    margin-left: 50%;
+    padding:0px;
+    width:30px;
+    height:30px;
     box-shadow: 5px 5px #968f8f;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
-    
+    width:100px;
+    height:100px;
   }
+  button.btn1{
+    background-color: ${({ theme }) => theme.body};
+    position: absolute;
+    color:${({ theme }) => theme.text} ;
+    left:25px;
+    top:25px;
+    margin:100px,auto ;
+    padding:0px;
+    width:100px;
+    height:100px;
+    box-shadow: 5px 5px #968f8f;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
   
   `;

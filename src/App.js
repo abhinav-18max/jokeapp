@@ -40,10 +40,10 @@ const toggleTheme = () => {
    <>
    <GlobalStyles />
    <div className="return">
-   <div className="btn">
-   <button onClick={toggleTheme}>Toggle theme</button>
-   </div>
-  <div className="btn"><button onClick={click} >Jokes</button></div>
+   
+   <button onClick={toggleTheme} className="btn1" >{theme === 'light' ? 'dark theme' : 'light theme'}!</button>
+   
+  <button onClick={click} className="btn" >Jokes</button>
    
    
    <div>{myArray.map( e =>
