@@ -1,0 +1,22 @@
+.list{
+  background-color:rgba(224, 28, 28, 0.459);
+  text-emphasis-color: rgb(255, 255, 255);
+  position: relative;
+  margin:100px,auto ;
+  padding:10px;
+  margin-left: 25%;
+  margin-right:25%;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.btn{
+  background-color: rgba(0, 5, 4, 0.788);
+  position: relative;
+  margin:100px,auto ;
+  padding:100px;
+  margin-left: 50%;
+  box-shadow: 5px 5px #968f8f;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
